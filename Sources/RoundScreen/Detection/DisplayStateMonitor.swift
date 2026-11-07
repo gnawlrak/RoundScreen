@@ -9,7 +9,9 @@ final class DisplayStateMonitor {
     var onUpdate: (([DisplayEvaluation]) -> Void)?
 
     private var pollTask: Task<Void, Never>?
-    private var notificationTasks: [Task<Void, Never>] = []
+    private var notificationObservers: [
+        (center: NotificationCenter, token: NSObjectProtocol)
+    ] = []
     private var settleTask: Task<Void, Never>?
     private var isRunning = false
 
@@ -40,10 +42,10 @@ final class DisplayStateMonitor {
         pollTask = nil
         settleTask?.cancel()
         settleTask = nil
-        for task in notificationTasks {
-            task.cancel()
+        for observation in notificationObservers {
+            observation.center.removeObserver(observation.token)
         }
-        notificationTasks.removeAll()
+        notificationObservers.removeAll()
         onUpdate?([])
     }
 
@@ -98,13 +100,16 @@ final class DisplayStateMonitor {
     }
 
     private func observe(center: NotificationCenter, name: Notification.Name) {
-        let task = Task { @MainActor [weak self] in
-            for await _ in center.notifications(named: name) {
-                guard let self, !Task.isCancelled else { return }
-                self.scheduleSettledRefresh()
+        let token = center.addObserver(
+            forName: name,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            Task { @MainActor [weak self] in
+                self?.scheduleSettledRefresh()
             }
         }
-        notificationTasks.append(task)
+        notificationObservers.append((center, token))
     }
 
     private func scheduleSettledRefresh() {

@@ -17,7 +17,9 @@ final class OverlayCoordinator {
     private var isLocked = false
     private var isHoldingAfterUnlock = false
     private var unlockTask: Task<Void, Never>?
-    private var notificationTasks: [Task<Void, Never>] = []
+    private var notificationObservers: [
+        (center: NotificationCenter, token: NSObjectProtocol)
+    ] = []
 
     var isCursorGuardActive: Bool {
         cursorGuard.isActive
@@ -40,10 +42,10 @@ final class OverlayCoordinator {
         cursorGuard.stop()
         unlockTask?.cancel()
         unlockTask = nil
-        for task in notificationTasks {
-            task.cancel()
+        for observation in notificationObservers {
+            observation.center.removeObserver(observation.token)
         }
-        notificationTasks.removeAll()
+        notificationObservers.removeAll()
         removeAll()
     }
 
@@ -202,15 +204,18 @@ final class OverlayCoordinator {
     private func observe(
         center: NotificationCenter,
         name: Notification.Name,
-        action: @escaping () -> Void
+        action: @escaping @MainActor @Sendable () -> Void
     ) {
-        let task = Task { @MainActor in
-            for await _ in center.notifications(named: name) {
-                guard !Task.isCancelled else { return }
+        let token = center.addObserver(
+            forName: name,
+            object: nil,
+            queue: .main
+        ) { _ in
+            MainActor.assumeIsolated {
                 action()
             }
         }
-        notificationTasks.append(task)
+        notificationObservers.append((center, token))
     }
 
     private func refreshDisplays() {
