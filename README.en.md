@@ -31,7 +31,7 @@ The radius follows the current Space:
 | --- | --- | --- |
 | Normal | `20 pt` | No window touches that corner |
 | Maximized | `14 pt` | Any window on the display matches the visible frame, or touches that corner |
-| Fullscreen | `0 pt` | A window covers the display, or the frontmost app reports `AXFullScreen` |
+| Fullscreen | `0 pt` | The frontmost window covers the display, or the frontmost app reports `AXFullScreen` |
 
 The defaults are measured values. Both Normal and Maximized are configurable.
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 — 2026-11-07
+
+- Fix a fullscreen false positive caused by a background helper window that
+  exactly matches the display frame. WindowServer fullscreen detection now
+  only considers the frontmost eligible window; native fullscreen still uses
+  `AXFullScreen`.
+- Add a regression test for a background full-screen-sized window behind a
+  normal foreground window.
+
 ## 1.0.0 — 2026-11-07
 
 Initial public release.
