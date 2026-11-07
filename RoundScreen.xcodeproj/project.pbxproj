@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001328A77E14404CDAF07869 /* HotCornerPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BC510B6CE3C28ADC747E1 /* HotCornerPreferences.swift */; };
+		064E9C44860E98A7F972B827 /* RoundScreenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */; };
+		0C64126021221C51448339E4 /* DisplayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777662E9F05C9E0668E3AE4E /* DisplayState.swift */; };
+		0E2F04CDA1E589D4FC53E820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B8588D794EC187C6D30D43 /* AppDelegate.swift */; };
+		10BF353C2249F20A4B614AED /* OverlayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B02FECBA28BDDEFF93A64E /* OverlayCoordinator.swift */; };
+		12646C9F5FA8B4E8E109D67E /* RoundScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199502B52F3103D995CC022B /* RoundScreenModel.swift */; };
+		152CB780E397A0B6D16A990A /* HotCornerActionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0468FE143CE3D0B913A6B80 /* HotCornerActionService.swift */; };
+		184B4515C3DAE74411B00886 /* PersistentSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C7F79112570CCE629F7DD /* PersistentSpace.swift */; };
+		18FE49CE2B58056B2CC05B77 /* WindowGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5BD23283740EFA599F0B5B /* WindowGeometry.swift */; };
+		1932DBAE16229AA44A43CEDC /* SkyLightBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916DA3409CD8CBC12ECD627 /* SkyLightBridge.swift */; };
+		1953EB2CD6A2841ABC02C413 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE14392FED9D3A94B9EB9AAF /* SettingsView.swift */; };
+		1C8369E883D52C77EA1C5BB6 /* RoundScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708915AC7B2C9EE030289B05 /* RoundScreenApp.swift */; };
+		20D42FEAC2CFEBE5D64031E9 /* DisplayStateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8726FB6FC547CDAFCE7AF /* DisplayStateMonitor.swift */; };
+		2E51C75A29682CDAFA77E4ED /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D6EAF9D051183B8057A8E4 /* SettingsWindowController.swift */; };
+		2E946E4C519FF3AC51D4F73A /* RoundScreenCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		352935484A63A9424F905783 /* CornerMaskPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B90819E555FD3CE4858166 /* CornerMaskPathBuilder.swift */; };
+		391AABF9C2169837A0AEBB23 /* NativeFullscreenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DB3C271446FE830688140 /* NativeFullscreenProvider.swift */; };
+		3CA3C6DB73510FBF23C3741F /* DisplayStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBE23C683926CC5C1CDA46 /* DisplayStatus.swift */; };
+		4BAD74DB0B235E673938DE49 /* DisplayStateResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54863DA30778125DDD9DD2D1 /* DisplayStateResolver.swift */; };
+		55BF5A64B475576D48BD8B54 /* DisplayStateResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3700D069232C73FDDF74 /* DisplayStateResolverTests.swift */; };
+		56937C4F7C09DA87B061ADB1 /* ScreenIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D7F63AC6B37928E8E49907 /* ScreenIdentity.swift */; };
+		5950CFE31C0C0C314FBCD375 /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CAAF161023128184EB93F7 /* MenuContentView.swift */; };
+		5FFD16ACCF6C5A0D9AF827F7 /* WindowSnapshotProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CBECC0431DEEB69E5A5BB6 /* WindowSnapshotProvider.swift */; };
+		66AE6C8113584E330F63CCB9 /* CornerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75FADAFD35A36B6AD8D3970 /* CornerOverlayView.swift */; };
+		80E4FE5820005E07D035A8C2 /* HotCornerActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABEAB76B24778E25321029 /* HotCornerActionTests.swift */; };
+		8EE940FA326699BBDFFD0606 /* SessionLockMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D259A444134C2477FD7203A /* SessionLockMonitor.swift */; };
+		99B4A941143CD662F20CF61D /* CornerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC91699DF61F7CECB37B9E /* CornerLayout.swift */; };
+		9C4491B9FD4BE5E2B698E1DB /* CornerOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93F40EBD21ABAA0DC0EC45 /* CornerOverlayWindow.swift */; };
+		A251B10297E812F1281064A1 /* CornerBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB97C86482D8A801241BC5EC /* CornerBehaviorTests.swift */; };
+		C2AB6868672CD2DC284D6002 /* HotCornerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F9167602685BB0476269F /* HotCornerAction.swift */; };
+		C4C3A8F29EED791D7F74A8F6 /* RoundScreenSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350B567D8A72E29CB2319D6 /* RoundScreenSettings.swift */; };
+		D4B9B5CA2D3911F230DE9C1C /* RoundScreenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */; };
+		DE85DA00BFD3E8B6B9D6CED7 /* RoundScreenCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E60EE0260A07439D799B3C1F /* SpaceWindowQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050AFDC14202DF63D85242D /* SpaceWindowQuery.swift */; };
+		E98722CA4939FE8BB8077F6D /* CornerCursorGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262F43E2FFB36A87FE4097D /* CornerCursorGeometry.swift */; };
+		EA36ED968D680FF9DB64BEB4 /* CornerCursorGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67AB409096DCBD14C4C1D3 /* CornerCursorGuard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A32A6C8B89CC9CDCA4446A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1FEBC9B3A3E45B6C63B9B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57A0441533AB78C1E797EED2;
+			remoteInfo = RoundScreenCore;
+		};
+		D14DBAF7646E88A583A00AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1FEBC9B3A3E45B6C63B9B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57A0441533AB78C1E797EED2;
+			remoteInfo = RoundScreenCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E168D92BAFE705E58D132B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE85DA00BFD3E8B6B9D6CED7 /* RoundScreenCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8938018012A124A1B9DC7C24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E946E4C519FF3AC51D4F73A /* RoundScreenCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0050AFDC14202DF63D85242D /* SpaceWindowQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceWindowQuery.swift; sourceTree = "<group>"; };
+		199502B52F3103D995CC022B /* RoundScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundScreenModel.swift; sourceTree = "<group>"; };
+		19CF3700D069232C73FDDF74 /* DisplayStateResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStateResolverTests.swift; sourceTree = "<group>"; };
+		1D259A444134C2477FD7203A /* SessionLockMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLockMonitor.swift; sourceTree = "<group>"; };
+		21CAAF161023128184EB93F7 /* MenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentView.swift; sourceTree = "<group>"; };
+		29CBECC0431DEEB69E5A5BB6 /* WindowSnapshotProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSnapshotProvider.swift; sourceTree = "<group>"; };
+		2A5BD23283740EFA599F0B5B /* WindowGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowGeometry.swift; sourceTree = "<group>"; };
+		3D67AB409096DCBD14C4C1D3 /* CornerCursorGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCursorGuard.swift; sourceTree = "<group>"; };
+		5262F43E2FFB36A87FE4097D /* CornerCursorGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCursorGeometry.swift; sourceTree = "<group>"; };
+		54863DA30778125DDD9DD2D1 /* DisplayStateResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStateResolver.swift; sourceTree = "<group>"; };
+		5916DA3409CD8CBC12ECD627 /* SkyLightBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyLightBridge.swift; sourceTree = "<group>"; };
+		6FABEAB76B24778E25321029 /* HotCornerActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornerActionTests.swift; sourceTree = "<group>"; };
+		708915AC7B2C9EE030289B05 /* RoundScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundScreenApp.swift; sourceTree = "<group>"; };
+		76F8726FB6FC547CDAFCE7AF /* DisplayStateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStateMonitor.swift; sourceTree = "<group>"; };
+		777662E9F05C9E0668E3AE4E /* DisplayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayState.swift; sourceTree = "<group>"; };
+		8350B567D8A72E29CB2319D6 /* RoundScreenSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundScreenSettings.swift; sourceTree = "<group>"; };
+		85B90819E555FD3CE4858166 /* CornerMaskPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerMaskPathBuilder.swift; sourceTree = "<group>"; };
+		8F9A3859FC96D2993AB94B35 /* RoundScreenCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundScreenCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		934F9167602685BB0476269F /* HotCornerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornerAction.swift; sourceTree = "<group>"; };
+		98D6EAF9D051183B8057A8E4 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		A0468FE143CE3D0B913A6B80 /* HotCornerActionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornerActionService.swift; sourceTree = "<group>"; };
+		A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoundScreenCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC163EF85805291089C9012D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AE93F40EBD21ABAA0DC0EC45 /* CornerOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerOverlayWindow.swift; sourceTree = "<group>"; };
+		B9B8588D794EC187C6D30D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE9DB3C271446FE830688140 /* NativeFullscreenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeFullscreenProvider.swift; sourceTree = "<group>"; };
+		C8D7F63AC6B37928E8E49907 /* ScreenIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenIdentity.swift; sourceTree = "<group>"; };
+		C9DC91699DF61F7CECB37B9E /* CornerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerLayout.swift; sourceTree = "<group>"; };
+		CFBBE23C683926CC5C1CDA46 /* DisplayStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStatus.swift; sourceTree = "<group>"; };
+		DE14392FED9D3A94B9EB9AAF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E61BC510B6CE3C28ADC747E1 /* HotCornerPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornerPreferences.swift; sourceTree = "<group>"; };
+		E75FADAFD35A36B6AD8D3970 /* CornerOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerOverlayView.swift; sourceTree = "<group>"; };
+		ED2C7F79112570CCE629F7DD /* PersistentSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentSpace.swift; sourceTree = "<group>"; };
+		F8B02FECBA28BDDEFF93A64E /* OverlayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCoordinator.swift; sourceTree = "<group>"; };
+		F97E280BAEABCD3DF2D4C09D /* RoundScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97C86482D8A801241BC5EC /* CornerBehaviorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerBehaviorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43D2DF61A19EB7CA6A5EBC4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E9C44860E98A7F972B827 /* RoundScreenCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60832E3868DF179095729B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B9B5CA2D3911F230DE9C1C /* RoundScreenCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C92FCA646AAE994A35FE11 = {
+			isa = PBXGroup;
+			children = (
+				0F4539678E2394B9B7BAE1ED /* Sources */,
+				1FC2A0CFBB91DF06FBC441AE /* Tests */,
+				6ABDDA033C1F51E7B15289DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08AFF4480FA55D7CAB17D74E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFBBE23C683926CC5C1CDA46 /* DisplayStatus.swift */,
+				199502B52F3103D995CC022B /* RoundScreenModel.swift */,
+				8350B567D8A72E29CB2319D6 /* RoundScreenSettings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F4539678E2394B9B7BAE1ED /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6E2695ECA4D09F08F2AA0149 /* RoundScreen */,
+				73C39E220D860CEB800739C2 /* RoundScreenCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		17088A24F7B1D99DF5469756 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				21CAAF161023128184EB93F7 /* MenuContentView.swift */,
+				DE14392FED9D3A94B9EB9AAF /* SettingsView.swift */,
+				98D6EAF9D051183B8057A8E4 /* SettingsWindowController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1FC2A0CFBB91DF06FBC441AE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5EA66006EE980709E78B42 /* RoundScreenCoreTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2C14F63141E029C2D8825BAC /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C7F79112570CCE629F7DD /* PersistentSpace.swift */,
+				5916DA3409CD8CBC12ECD627 /* SkyLightBridge.swift */,
+				0050AFDC14202DF63D85242D /* SpaceWindowQuery.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		4D5EA66006EE980709E78B42 /* RoundScreenCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB97C86482D8A801241BC5EC /* CornerBehaviorTests.swift */,
+				19CF3700D069232C73FDDF74 /* DisplayStateResolverTests.swift */,
+				6FABEAB76B24778E25321029 /* HotCornerActionTests.swift */,
+			);
+			path = RoundScreenCoreTests;
+			sourceTree = "<group>";
+		};
+		534A6EEDDDF3DEC7094B256E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				A0468FE143CE3D0B913A6B80 /* HotCornerActionService.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		6ABDDA033C1F51E7B15289DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F97E280BAEABCD3DF2D4C09D /* RoundScreen.app */,
+				A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */,
+				8F9A3859FC96D2993AB94B35 /* RoundScreenCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E2695ECA4D09F08F2AA0149 /* RoundScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AC163EF85805291089C9012D /* Info.plist */,
+				534A6EEDDDF3DEC7094B256E /* Actions */,
+				A78EDA54638DD45D60FD924A /* App */,
+				A4C911D88047EAF476231871 /* Detection */,
+				08AFF4480FA55D7CAB17D74E /* Model */,
+				E16AD37AD021B56FDAC130A7 /* Overlay */,
+				2C14F63141E029C2D8825BAC /* Private */,
+				17088A24F7B1D99DF5469756 /* UI */,
+			);
+			path = RoundScreen;
+			sourceTree = "<group>";
+		};
+		73C39E220D860CEB800739C2 /* RoundScreenCore */ = {
+			isa = PBXGroup;
+			children = (
+				5262F43E2FFB36A87FE4097D /* CornerCursorGeometry.swift */,
+				C9DC91699DF61F7CECB37B9E /* CornerLayout.swift */,
+				85B90819E555FD3CE4858166 /* CornerMaskPathBuilder.swift */,
+				777662E9F05C9E0668E3AE4E /* DisplayState.swift */,
+				54863DA30778125DDD9DD2D1 /* DisplayStateResolver.swift */,
+				934F9167602685BB0476269F /* HotCornerAction.swift */,
+				2A5BD23283740EFA599F0B5B /* WindowGeometry.swift */,
+			);
+			path = RoundScreenCore;
+			sourceTree = "<group>";
+		};
+		A4C911D88047EAF476231871 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				76F8726FB6FC547CDAFCE7AF /* DisplayStateMonitor.swift */,
+				E61BC510B6CE3C28ADC747E1 /* HotCornerPreferences.swift */,
+				BE9DB3C271446FE830688140 /* NativeFullscreenProvider.swift */,
+				C8D7F63AC6B37928E8E49907 /* ScreenIdentity.swift */,
+				1D259A444134C2477FD7203A /* SessionLockMonitor.swift */,
+				29CBECC0431DEEB69E5A5BB6 /* WindowSnapshotProvider.swift */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		A78EDA54638DD45D60FD924A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B9B8588D794EC187C6D30D43 /* AppDelegate.swift */,
+				708915AC7B2C9EE030289B05 /* RoundScreenApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E16AD37AD021B56FDAC130A7 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				3D67AB409096DCBD14C4C1D3 /* CornerCursorGuard.swift */,
+				E75FADAFD35A36B6AD8D3970 /* CornerOverlayView.swift */,
+				AE93F40EBD21ABAA0DC0EC45 /* CornerOverlayWindow.swift */,
+				F8B02FECBA28BDDEFF93A64E /* OverlayCoordinator.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		075CEA51547EA61C088A6EE5 /* RoundScreenCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930EF7F5774A80B508A6C982 /* Build configuration list for PBXNativeTarget "RoundScreenCoreTests" */;
+			buildPhases = (
+				9A9D53C1049DEC90B761F299 /* Sources */,
+				43D2DF61A19EB7CA6A5EBC4F /* Frameworks */,
+				0E168D92BAFE705E58D132B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2984CC1DBDCDB7887BBEBA89 /* PBXTargetDependency */,
+			);
+			name = RoundScreenCoreTests;
+			packageProductDependencies = (
+			);
+			productName = RoundScreenCoreTests;
+			productReference = 8F9A3859FC96D2993AB94B35 /* RoundScreenCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F8CB484348E9A0761EFCF90 /* RoundScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACD1272205F076E7440E4B81 /* Build configuration list for PBXNativeTarget "RoundScreen" */;
+			buildPhases = (
+				E364C2CFB51BFD27083A1149 /* Sources */,
+				E60832E3868DF179095729B5 /* Frameworks */,
+				8938018012A124A1B9DC7C24 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF33BB903477345E19034C55 /* PBXTargetDependency */,
+			);
+			name = RoundScreen;
+			packageProductDependencies = (
+			);
+			productName = RoundScreen;
+			productReference = F97E280BAEABCD3DF2D4C09D /* RoundScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57A0441533AB78C1E797EED2 /* RoundScreenCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333F9996B919FE8C22D40DA1 /* Build configuration list for PBXNativeTarget "RoundScreenCore" */;
+			buildPhases = (
+				AAA641FCF6AC8E5812AEC0E6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundScreenCore;
+			packageProductDependencies = (
+			);
+			productName = RoundScreenCore;
+			productReference = A87F1764535E4D8CBB77181E /* RoundScreenCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA1FEBC9B3A3E45B6C63B9B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					075CEA51547EA61C088A6EE5 = {
+						ProvisioningStyle = Automatic;
+					};
+					2F8CB484348E9A0761EFCF90 = {
+						ProvisioningStyle = Automatic;
+					};
+					57A0441533AB78C1E797EED2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 814625CEA40E781548125C3E /* Build configuration list for PBXProject "RoundScreen" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 05C92FCA646AAE994A35FE11;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6ABDDA033C1F51E7B15289DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57A0441533AB78C1E797EED2 /* RoundScreenCore */,
+				2F8CB484348E9A0761EFCF90 /* RoundScreen */,
+				075CEA51547EA61C088A6EE5 /* RoundScreenCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A9D53C1049DEC90B761F299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A251B10297E812F1281064A1 /* CornerBehaviorTests.swift in Sources */,
+				55BF5A64B475576D48BD8B54 /* DisplayStateResolverTests.swift in Sources */,
+				80E4FE5820005E07D035A8C2 /* HotCornerActionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA641FCF6AC8E5812AEC0E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98722CA4939FE8BB8077F6D /* CornerCursorGeometry.swift in Sources */,
+				99B4A941143CD662F20CF61D /* CornerLayout.swift in Sources */,
+				352935484A63A9424F905783 /* CornerMaskPathBuilder.swift in Sources */,
+				0C64126021221C51448339E4 /* DisplayState.swift in Sources */,
+				4BAD74DB0B235E673938DE49 /* DisplayStateResolver.swift in Sources */,
+				C2AB6868672CD2DC284D6002 /* HotCornerAction.swift in Sources */,
+				18FE49CE2B58056B2CC05B77 /* WindowGeometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E364C2CFB51BFD27083A1149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2F04CDA1E589D4FC53E820 /* AppDelegate.swift in Sources */,
+				EA36ED968D680FF9DB64BEB4 /* CornerCursorGuard.swift in Sources */,
+				66AE6C8113584E330F63CCB9 /* CornerOverlayView.swift in Sources */,
+				9C4491B9FD4BE5E2B698E1DB /* CornerOverlayWindow.swift in Sources */,
+				20D42FEAC2CFEBE5D64031E9 /* DisplayStateMonitor.swift in Sources */,
+				3CA3C6DB73510FBF23C3741F /* DisplayStatus.swift in Sources */,
+				152CB780E397A0B6D16A990A /* HotCornerActionService.swift in Sources */,
+				001328A77E14404CDAF07869 /* HotCornerPreferences.swift in Sources */,
+				5950CFE31C0C0C314FBCD375 /* MenuContentView.swift in Sources */,
+				391AABF9C2169837A0AEBB23 /* NativeFullscreenProvider.swift in Sources */,
+				10BF353C2249F20A4B614AED /* OverlayCoordinator.swift in Sources */,
+				184B4515C3DAE74411B00886 /* PersistentSpace.swift in Sources */,
+				1C8369E883D52C77EA1C5BB6 /* RoundScreenApp.swift in Sources */,
+				12646C9F5FA8B4E8E109D67E /* RoundScreenModel.swift in Sources */,
+				C4C3A8F29EED791D7F74A8F6 /* RoundScreenSettings.swift in Sources */,
+				56937C4F7C09DA87B061ADB1 /* ScreenIdentity.swift in Sources */,
+				8EE940FA326699BBDFFD0606 /* SessionLockMonitor.swift in Sources */,
+				1953EB2CD6A2841ABC02C413 /* SettingsView.swift in Sources */,
+				2E51C75A29682CDAFA77E4ED /* SettingsWindowController.swift in Sources */,
+				1932DBAE16229AA44A43CEDC /* SkyLightBridge.swift in Sources */,
+				E60EE0260A07439D799B3C1F /* SpaceWindowQuery.swift in Sources */,
+				5FFD16ACCF6C5A0D9AF827F7 /* WindowSnapshotProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2984CC1DBDCDB7887BBEBA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57A0441533AB78C1E797EED2 /* RoundScreenCore */;
+			targetProxy = A32A6C8B89CC9CDCA4446A5C /* PBXContainerItemProxy */;
+		};
+		DF33BB903477345E19034C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57A0441533AB78C1E797EED2 /* RoundScreenCore */;
+			targetProxy = D14DBAF7646E88A583A00AFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A0FD906B9D0C77D8B0E1E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		36922FF0433294DFAF4CA60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnawlrak.RoundScreenCoreTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3EB3C30971BAA4C5F6F66A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnawlrak.RoundScreenCore;
+				PRODUCT_NAME = RoundScreenCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		61CDDBE09CA9894AD95ABE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Sources/RoundScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnawlrak.RoundScreen;
+				PRODUCT_NAME = RoundScreen;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		806CF1BD7AA1BAC5A903E308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnawlrak.RoundScreenCore;
+				PRODUCT_NAME = RoundScreenCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		823F4C85884077303247C962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Sources/RoundScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnawlrak.RoundScreen;
+				PRODUCT_NAME = RoundScreen;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CAB8D812236FB4F55CD37912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D4CE1046127958860184E50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnawlrak.RoundScreenCoreTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		333F9996B919FE8C22D40DA1 /* Build configuration list for PBXNativeTarget "RoundScreenCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806CF1BD7AA1BAC5A903E308 /* Debug */,
+				3EB3C30971BAA4C5F6F66A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		814625CEA40E781548125C3E /* Build configuration list for PBXProject "RoundScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB8D812236FB4F55CD37912 /* Debug */,
+				1A0FD906B9D0C77D8B0E1E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		930EF7F5774A80B508A6C982 /* Build configuration list for PBXNativeTarget "RoundScreenCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CE1046127958860184E50E /* Debug */,
+				36922FF0433294DFAF4CA60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ACD1272205F076E7440E4B81 /* Build configuration list for PBXNativeTarget "RoundScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823F4C85884077303247C962 /* Debug */,
+				61CDDBE09CA9894AD95ABE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA1FEBC9B3A3E45B6C63B9B4 /* Project object */;
+}
