@@ -49,7 +49,7 @@ RoundScreen 在每块显示器上绘制一层真正驻留的四角遮罩：
 | --- | --- | --- |
 | Normal | `20 pt` | 该角没有窗口贴住 |
 | Maximized | `14 pt` | 同屏任一窗口贴合工作区，或窗口对应角贴住屏幕角 |
-| Fullscreen | `0 pt` | 任一窗口覆盖整屏，或前台应用通过辅助功能报告 `AXFullScreen` |
+| Fullscreen | `0 pt` | 最前面的窗口覆盖整屏，或前台应用通过辅助功能报告 `AXFullScreen` |
 
 原生全屏经常不会把窗口边界报告成整屏尺寸。RoundScreen 同时读取辅助功能里的 `AXFullScreen`，避免把“全屏”误判成“最大化”。
 

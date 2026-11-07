@@ -39,17 +39,15 @@ public enum DisplayStateResolver {
                 )
             }
 
-            if let fullscreenWindow = eligibleWindows.first(where: { window in
-                WindowGeometry.approximatelyEqual(
-                    window.frame,
-                    display.frame,
-                    tolerance: fullscreenTolerance
-                )
-            }) {
+            if WindowGeometry.approximatelyEqual(
+                frontmostWindow.frame,
+                display.frame,
+                tolerance: fullscreenTolerance
+            ) {
                 return DisplayEvaluation(
                     display: display,
                     corners: .fullscreen,
-                    sourceWindowIDs: [fullscreenWindow.id]
+                    sourceWindowIDs: [frontmostWindow.id]
                 )
             }
 

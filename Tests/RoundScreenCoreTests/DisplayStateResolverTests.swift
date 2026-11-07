@@ -151,7 +151,7 @@ final class DisplayStateResolverTests: XCTestCase {
         XCTAssertEqual(state(of: "B", in: evaluations), .normal)
     }
 
-    func testBackgroundFullscreenWindowWinsOverFrontmostWindow() {
+    func testBackgroundFullScreenSizedWindowDoesNotHideDisplay() {
         let display = makeDisplay(
             id: "A",
             frame: CGRect(x: 0, y: 0, width: 1440, height: 900),
@@ -168,8 +168,8 @@ final class DisplayStateResolverTests: XCTestCase {
             windows: [floating, fullscreen]
         )
 
-        XCTAssertEqual(evaluation.corners, .fullscreen)
-        XCTAssertEqual(evaluation.sourceWindowIDs, [100])
+        XCTAssertEqual(evaluation.corners, .normal)
+        XCTAssertEqual(evaluation.sourceWindowIDs, [])
     }
 
     func testMaximizedDisplayDoesNotAffectAnotherDisplay() {
